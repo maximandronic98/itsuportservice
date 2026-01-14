@@ -84,8 +84,7 @@ input,textarea{width:100%;padding:12px;margin:8px 0;border-radius:6px;border:1px
 <textarea name="message" rows="5" placeholder="Beschreiben Sie Ihr Problem" required></textarea>
 <button class="btn" type="submit">Anfrage senden</button>
 </form>
-
- <div class="paypal-wrapper">
+<div class="paypal-wrapper">
   <form action="https://www.paypal.com/cgi-bin/webscr"
         method="post"
         target="_top">
@@ -94,6 +93,7 @@ input,textarea{width:100%;padding:12px;margin:8px 0;border-radius:6px;border:1px
     <input type="hidden" name="hosted_button_id" value="88HJ4FV5SFZQY">
     <input type="hidden" name="currency_code" value="EUR">
 
+    <button type="submit" class="paypal-btn">
       Jetzt sicher mit PayPal bezahlen
     </button>
 
@@ -133,6 +133,7 @@ if(!localStorage.getItem('cookiesAccepted')){document.getElementById('cookieBann
 
 </body>
 </html>
+
 
 
 
